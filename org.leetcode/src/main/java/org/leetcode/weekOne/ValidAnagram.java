@@ -1,4 +1,5 @@
 package org.leetcode.weekOne;
+import java.util.Arrays;
 import java.util.HashMap;
 
 //Given two strings s and t, return true if t is an anagram of s, and false otherwise.
@@ -14,7 +15,11 @@ public class ValidAnagram {
         var s = "anagram";
         var t = "nagaram";
 
-        System.out.println("Is an anagram? " + isAnagram(s, t));
+        System.out.println("[FIRST SOLUTION]Is an anagram? " + isAnagram(s, t));
+
+        isAnagramSecondSolution(s, t);
+
+        System.out.println("[SECOND SOLUTION]Is an anagram? " + isAnagramSecondSolution(s, t));
     }
 
     public static boolean isAnagram(String s, String t) {
@@ -43,5 +48,18 @@ public class ValidAnagram {
       }
 
         return true;
+    }
+
+    public static boolean isAnagramSecondSolution(String s, String t) {
+
+       if(s.length() != t.length()) return false;
+
+       var sArray = s.toCharArray();
+       var tArray = t.toCharArray();
+
+        Arrays.sort(sArray);
+        Arrays.sort(tArray);
+
+       return Arrays.equals(sArray, tArray);
     }
 }
