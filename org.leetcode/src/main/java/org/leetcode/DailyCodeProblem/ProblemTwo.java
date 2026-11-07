@@ -1,7 +1,5 @@
 package org.leetcode.DailyCodeProblem;
 
-import java.util.HashMap;
-
 public class ProblemTwo {
 
 //    Given an array of integers, return a new array such that each element at index i
