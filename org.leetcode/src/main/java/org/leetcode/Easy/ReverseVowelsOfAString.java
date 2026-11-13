@@ -1,13 +1,4 @@
 package org.leetcode.Easy;
-
-import java.util.Arrays;
-import java.util.List;
-
-public class ReverseVowelsOfAString {
-    public static void main(String[] args) {
-        
-    }
-
 // Given a string s, reverse only all the vowels in the string and return it.
 
 // The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
@@ -36,6 +27,12 @@ public class ReverseVowelsOfAString {
 
 // 1 <= s.length <= 3 * 105
 // s consist of printable ASCII characters.
+
+public class ReverseVowelsOfAString {
+  
+  public static void main(String[] args) {
+       System.err.println(reverseVowels("IceCreAm"));
+    }
 
 
     public static String reverseVowels(String s) {
